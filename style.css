@@ -1,0 +1,249 @@
+/* 
+Theme Name: Shane
+Description: Test
+Author: Shane Burkhart
+Version: 1.0
+*/ 
+
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    color: #5a5a5a;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+p strong {
+    color: #444444;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=search], textarea {
+    border: 1px solid #ddd; 
+    margin-right: 5px; 
+    padding: 12px;
+    width: 85%; 
+    font-size: 14px; 
+    color: #222; 
+    margin-bottom: 10px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #222; 
+    border: 0; 
+    color: #fff; 
+    padding: 10px 12px; 
+    text-align: center; 
+    font-size: 14px;
+}
+
+input[type=password] {
+    width: 100%;
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+.big-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.small-container {
+    width: 770px;
+    margin: 0 auto;
+}
+
+header.site-header {
+    height: 50px;
+    background-color: #193C4C;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+header.site-header nav {
+    float: right;
+}
+
+header.site-header nav a {
+    color: #eeeeee;
+    display: inline-block;
+    padding: 14px 0;
+    margin-left: 35px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    
+}
+
+header.site-header .site-logo {
+    color: #fafafa;
+    display: inline-block;
+    padding: 10px 0;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+article.post {
+    padding-bottom: 40px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #dddddd;
+}
+
+article.post.last {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+article.post .post-title {
+    margin-bottom: 8px;
+}
+
+article.post p.post-date {
+    color: #999999;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+article.post a:visited {
+    color: #1662b5;
+}
+
+article.post img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+article ul, article ol {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+article li {
+    margin-bottom: .5em; 
+}
+
+article blockquote {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-left: 1.5em;
+    border-left: 3px solid #20b2aa; 
+}
+article blockquote cite {
+    font-style: italic;
+    padding-left: 2em;
+}
+
+#footer-meta {
+    text-align: center; 
+    border-top: 1px solid #ddd; 
+    padding: 15px 0;
+}
+
+#footer-meta p {
+    color: #aaa; 
+    font-size: 12px;
+}
+
+#footer-meta a {
+    color: #aaa;
+}
+
+/* -- media queries -- */
+/* We use 954px as break because we need 900*1.06 for the left and right padding of 3%. */
+@media (max-width: 954px) {	
+    .big-container {
+        width: auto;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+/* We use 816px as break because we need 770*1.06 for the left and right padding of 3%. */
+@media (max-width: 816px) {	
+    .big-container, .small-container {
+        width: auto;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    header.site-header {
+        height: auto;
+    }
+
+    header.site-header .site-logo {
+        display: block;
+    }
+
+    header.site-header nav {
+        float: left;
+    }
+
+    header.site-header nav a {
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 35px;
+    }
+}
+/* We are designing to make 320px width work with out nav bar, but we want to go a little bigger on
+ * the breakpoint just to be safe. */
+@media (max-width: 350px) {	
+    header.site-header nav a {
+        display: block;
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 35px;
+    }
+}
